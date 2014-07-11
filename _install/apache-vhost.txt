@@ -1,0 +1,31 @@
+ServerName localhost
+
+<VirtualHost *:80>
+
+  # Wildcard Alias
+  DocumentRoot "/var/www"
+  ServerName 127.0.0.1.xip.io
+  #ServerAlias *.127.0.0.1.xip.io
+
+  # Virtual Document Root
+  UseCanonicalName    Off
+  VirtualDocumentRoot /var/www/%0
+
+  # Global Directives for 127.0.0.1.xip.io
+  <Directory "/var/www">
+    # Disable Directory Browsing
+    #Options -Indexes
+    AllowOverride All
+    Options +FollowSymLinks
+  </Directory>
+
+</VirtualHost>
+
+# Custom VirtualHosts (activate if needed).
+
+#NameVirtualHost *:80
+
+#<VirtualHost *:80>
+#  ServerName test-laravel.127.0.0.1.xip.io
+#  DocumentRoot /var/www/test-laravel.127.0.0.1.xip.io/public
+#</VirtualHost>
