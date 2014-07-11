@@ -1,6 +1,6 @@
 # Ultimate PHP developer setup with Vagrant
 
-By Pascal Meunier
+By Pascal Meunier [@milhouse1337](https://twitter.com/milhouse1337)  
 Version: 1.0
 
 This setup script will automate the setup of a PHP developement box. It includes all the following:
