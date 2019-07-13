@@ -1,5 +1,9 @@
 # Ultimate PHP developer setup with Vagrant
 
+> This repo is deprecated, you should be using this one: https://github.com/milhouse1337/vagrant-lemp
+
+---
+
 By Pascal Meunier [@milhouse1337](https://twitter.com/milhouse1337)  
 Version: 1.0
 
